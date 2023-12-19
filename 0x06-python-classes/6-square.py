@@ -36,7 +36,7 @@ class Square:
     @property
     def position(self):
         """Retrieving position
-        
+
         Raises:
             TypeError: If position is not a tuple of 2 positive integers
         """
@@ -63,7 +63,7 @@ class Square:
         """Print Square."""
         if self.__size == 0:
             print()
-        
+
         [print("") for i in range(0, self.__position[1])]
         for i in range(self.__size):
             [print(" ", end="") for j in range(self.__position[0])]
