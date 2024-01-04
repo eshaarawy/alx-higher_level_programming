@@ -4,12 +4,10 @@
 
 class Rectangle:
     """Represents a Rectangle """
-    num = 0
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle."""
         self.width = width
         self.height = height
-        Rectangle.num += 1
 
     @property
     def width(self):
@@ -69,4 +67,3 @@ class Rectangle:
     def __del__(self):
         """Bye bye"""
         print("Bye rectangle...")
-        num -= 1
