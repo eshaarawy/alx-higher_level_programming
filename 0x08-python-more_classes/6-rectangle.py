@@ -69,4 +69,4 @@ class Rectangle:
     def __del__(self):
         """Bye bye"""
         print("Bye rectangle...")
-        num -= 1
+        Rectangle.num -= 1
