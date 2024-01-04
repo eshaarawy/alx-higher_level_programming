@@ -18,7 +18,7 @@ class Rectangle:
     def width(self):
         """Get/set the rectangle width"""
         return self.__width
-    
+
     def width(self, value):
         """Setter for rectangle width"""
         if type(value) is not int:
@@ -31,7 +31,7 @@ class Rectangle:
     def height(self):
         """Get/set the rectangle height"""
         return self.__height
-    
+
     def height(self, value):
         """Setter for rectangle height"""
         if type(value) is not int:
