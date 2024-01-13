@@ -62,3 +62,19 @@ class Rectangle(Base):
             raise ValueError("{} must be >= 0".format(name))
         elif not eq and value <= 0:
             raise ValueError("{} must be > 0".format(name))
+
+    def area(self):
+        """area"""
+        return self.height * self.width
+
+    def display(self):
+        """display"""
+        s = '\n' * self.y + \
+            (' ' * self.x + '#' * self.width + '\n') * self.height
+        print(s, end='')
+
+    def __str__(self):
+        """str"""
+        return '[{}] ({}) {}/{} - {}/{}'.\
+            format(type(self).__name__, self.id, self.x, self.y, self.width,
+                   self.height)
