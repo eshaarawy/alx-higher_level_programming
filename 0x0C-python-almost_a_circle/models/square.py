@@ -40,3 +40,9 @@ class Square(Rectangle):
             self.__update(*args)
         elif kwargs:
             self.__update(**kwargs)
+
+    def to_dictionary(self):
+        """dictionary representaion"""
+        return {
+            "id": self.id, "width": self.__width, "height": self.__height,
+                "x": self.__x, "y": self.__y}
